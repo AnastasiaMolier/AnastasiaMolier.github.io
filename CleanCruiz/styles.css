@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    width: 100%;
+    height: 90vh;
+}
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav .logo {
+    color: #F36B7F;
+    font-size: 22px;
+    font-weight: 700;
+}
+nav ul { 
+    display: flex;
+    list-style-type: none;
+    width: 40%;
+    justify-content: space-between;
+}
+.button {
+    border: 1px solid #F36B7F;
+    border-radius: 17px;
+    font-size: 16px;
+    line-height: 15px;
+    color: #F36B7F;
+    padding: 11px 25px;
+}
+.button:hover {
+    color: white;
+    background-color: #F36B7F;
+    transition: 0.3s;
+}
+.intro {
+    display: flex;
+    margin-top: 80px;
+}
+h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 68px;
+    margin-bottom: 30px;
+}
+.intro-text p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 70px;
+    width: 520px;
+}
+.book-now {
+    color: white;
+    border: 1px solid #F36B7F;
+    background-color: #F36B7F;
+    border-radius: 25px;
+    padding: 14px 45px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+}
+.book-now:hover {
+    color: #F36B7F;
+    border: 1px solid #F36B7F;
+    background-color: white;
+    transition: 0.3s;
+}
+.intro-img {
+    height: 370px;
+}
+.companies {
+    padding-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.companies img {
+    width: 95px;
+    height: 60px;
+}
+
+.download-section {
+    background-color: #F36B7F;
+    color: white;
+    height: 90vh;
+}
+.download-section .intro {
+    padding-top: 60px; 
+    align-items:center;
+    justify-content: space-between;
+}
+.download-section .intro-text {
+    width: 50%;
+}
+.download-section .intro img {
+    height: fit-content;
+    border-radius: 20px;
+    border: 15px solid #FFB7C1; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+   border-bottom: none;
+   margin-top: 20px;
+   margin-right: 70px;
+}
+.download-section .intro-text img {
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.services-section {
+    background-color: #F5F7FD;
+    height: 90vh;
+}
+.services-section h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    padding-top: 70px;
+}
+.services {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    margin-top: 20px;
+}
+.service {
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 30px rgba(210, 218, 242, 0.87);
+    border-radius: 12px;
+   padding: 45px;
+   margin-top: 90px;
+}
+.icon {
+    height: 100px;
+    margin-top:-95px;
+    margin-bottom: 25px;
+    border-radius: 50px;;
+}
+.service h4 {
+    padding-top: 15px;
+    margin-bottom: 15px;
+    font-size: 26px;
+}
+.service p {
+    font-size: 18px;
+line-height: 25px;
+}
+
+footer {
+    display: flex;
+    height: 80vh;
+    justify-content: space-between;
+    position: relative;
+}
+.footer-info {
+    width: 33%;
+    padding-top: 100px;
+}
+.footer-info h2 {
+    margin-bottom: 50px;
+    font-weight: 700;
+font-size: 32px;
+line-height: 41px;
+}
+.footer-info p {
+    font-weight: 400;
+font-size: 18px;
+line-height: 25px;
+margin-bottom: 50px;
+}
+footer img {
+    height: 120%;
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+}
+.footer-green {
+    height: 9vh;
+    background-color: #82B5A5;
+    border-top-left-radius: 300px;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+    }
+    nav ul {
+        display: none;
+    }
+    nav .logo {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
+    .intro {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .intro-img {
+        display: none;
+    }
+    h1 {
+        font-size: 40px;
+        text-align: center;
+        line-height: 48px;
+    }
+    .intro-text p {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 70px;
+        width: auto;
+    }
+    .book-now  {
+        margin: 0 auto;
+    }
+    .companies {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding-top: 40px;
+        justify-content: space-around;
+    }
+    .companies img {
+        width: 75px;
+        height: 50px;
+    }
+    .download-section {
+        height: 65vh;
+        width: 100%;
+    }
+    .download-section .intro-text {
+        width: 90%;
+    }
+    .download-section h1 {
+        font-size: 28px;
+        line-height: 1.27;
+    }
+    .download-section .intro img {
+        display: none;
+    }
+    .download-section .intro-text img {
+        display: block;
+        margin: 0 auto;
+    } 
+    .services-section {
+        height: fit-content;
+        padding-bottom: 30px;
+    }
+    .services-section h2 {
+        font-size: 28px;
+        padding-top: 30px;
+    }
+    .services {
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 2%;
+    }
+    .service {
+        padding: 25px;
+    }
+    .icon {
+        height: 90px;
+        margin-top:-70px;
+        margin-bottom: 0px;
+        border-radius: 50px;;
+    }
+
+ footer {
+    height: fit-content;
+    padding-bottom: 50px;
+ }
+    footer img{
+        display: none;
+    }
+    .footer-info {
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+    }
+    .footer-info p {
+        text-align: left;
+    }
+
+
+}
